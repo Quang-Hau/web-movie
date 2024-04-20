@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --primary-color: #2015ea;
+    --primary-color-light: #6861f1;
+    --text-dark: #020617;
+    --text-light: #94a3b8;
+    --body-color: #c0dce9;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    min-height: 100vh;
+    max-width: var(--max-width);
+}
+
+body{
+    background-color: var(--body-color);
+    color:#ffffff;
+}
+
+.container-content{
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0.2, 0.2, 0.2, 0.2);
+    background-color: var(--white);
+    width: 100%;
+    padding: 5rem;
+    max-width: 400px;
+    margin-inline: auto;
+}
+
+.container-content h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+
+.container-content h1{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.container-content label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.form-group{
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--body-color);
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+}
+
+
+
+.container-content input{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--text-dark);
+    background-color: transparent;
+}
+
+.container-content input::placeholder{
+    color: var(--text-dark);
+}
+
+.btn{
+    width: 400px;
+    max-width: 110%;
+    margin-left: -5%;;
+    margin-block: 1rem 2rem;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 35px;
+    font-size: 1rem;
+    color: var(--white);
+    background: var(--primary-color);
+    border: 5rem;
+}
+
+.btn:hover{
+    background-color: var(--primary-color-light);
+}
+
+
