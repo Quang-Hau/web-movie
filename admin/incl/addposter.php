@@ -1,18 +1,19 @@
 
 <?php
-    $messerr = '';
-    $messSucess = '';
+$messerr = '';
+$messSucess = '';
 if(isset($_POST['btn'])){
     require "../db/connect.php";
 
-    $name = $_POST['nameposter'];
-    $nation = $_POST['nation'];
-    $publish = $_POST['publish'];
-    $time = $_POST['time'];
-    $performer = $_POST['performer'];
-    $moviedetails = $_POST['moviedetails'];
-    $moviegenre = $_POST['moviegenre'];
-    $slogan = $_POST['slogan'];
+    //  mysqli_real_escape_string không bị lỗi thi thêm text có kí tự đặt biệt
+    $name = mysqli_real_escape_string($conn, $_POST['nameposter']);
+    $nation = mysqli_real_escape_string($conn, $_POST['nation']);
+    $publish = mysqli_real_escape_string($conn, $_POST['publish']);
+    $time = mysqli_real_escape_string($conn, $_POST['time']);
+    $performer = mysqli_real_escape_string($conn, $_POST['performer']);
+    $moviedetails = mysqli_real_escape_string($conn, $_POST['moviedetails']);
+    $moviegenre = mysqli_real_escape_string($conn, $_POST['moviegenre']);
+    $slogan = mysqli_real_escape_string($conn, $_POST['slogan']);
    
     $countfiles = count($_FILES['imgposter']['name']);
    
@@ -47,7 +48,6 @@ if(isset($_POST['btn'])){
 
     // video
 
-// Xử lý dữ liệu từ form
 
     // Xử lý tệp video được tải lên
     $video_name = $_FILES['postermvurl']['name'];
@@ -55,7 +55,6 @@ if(isset($_POST['btn'])){
     $video_type = $_FILES['postermvurl']['type'];
     
 
-    // Đường dẫn lưu trữ tệp video trên máy chủ
     $upload_path = "uploadvideoPoster/";
 
     // Di chuyển tệp video vào thư mục lưu trữ
@@ -65,18 +64,17 @@ if(isset($_POST['btn'])){
     $video_url = $upload_path.$video_name;
 
     
-        $sql = "INSERT INTO `poster_movie`(`poster_img`,`name_poster`,`nation`, `publish`,`time`,`performer`,`moviedetails`,`movie_genre`,`slogan`,`poster_vdurl`) VALUES('$imgs', '$name', '$nation', '$publish', '$time', '$performer', '$moviedetails', '$moviegenre', '$slogan', '$video_url')";
-       $result = mysqli_query($conn, $sql);
-       if ($result) {
-           echo $messSucess = "Dữ liệu đã được thêm vào cơ sở dữ liệu.";
-       } else {
-           echo $messerr = "Lỗi khi thêm dữ liệu vào cơ sở dữ liệu: " . mysqli_error($conn);
-       }
-   
+    $sql = "INSERT INTO `poster_movie`(`poster_img`,`name_poster`,`nation`, `publish`,`time`,`performer`,`moviedetails`,`movie_genre`,`slogan`,`poster_vdurl`) VALUES('$imgs', '$name', '$nation', '$publish', '$time', '$performer', '$moviedetails', '$moviegenre', '$slogan', '$video_url')";
+    $result = mysqli_query($conn, $sql);
+    if ($result) {
+        echo $messSucess = "Dữ liệu đã được thêm vào cơ sở dữ liệu.";
+    } else {
+        echo $messerr = "Lỗi khi thêm dữ liệu vào cơ sở dữ liệu: " . mysqli_error($conn);
+    }
    
 }
-
 ?>
+
 
 <div class="container">
         <div class="content">

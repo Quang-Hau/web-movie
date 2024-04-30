@@ -6,13 +6,15 @@
 if(isset($_POST['btn'])){
     require "../db/connect.php";
 
-    $namemovie = $_POST['namemovie'];
-    $nation = $_POST['nation'];
-    $publish = $_POST['publish'];
-    $time = $_POST['time'];
-    $performer = $_POST['performer'];
-    $moviedetails = $_POST['moviedetails'];
-    $moviegenre = $_POST['moviegenre'];
+    //  mysqli_real_escape_string không bị lỗi thi thêm text có kí tự đặt biệt
+    $namemovie= mysqli_real_escape_string($conn, $_POST['namemovie']);
+    $nation = mysqli_real_escape_string($conn, $_POST['nation']);
+    $publish = mysqli_real_escape_string($conn, $_POST['publish']);
+    $time = mysqli_real_escape_string($conn, $_POST['time']);
+    $performer = mysqli_real_escape_string($conn, $_POST['performer']);
+    $moviedetails = mysqli_real_escape_string($conn, $_POST['moviedetails']);
+    $moviegenre = mysqli_real_escape_string($conn, $_POST['moviegenre']);
+
 
     $countfiles = count($_FILES['imgmovie']['name']);
    
