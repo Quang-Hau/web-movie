@@ -2,8 +2,8 @@
 <div class="header" id="header">
         <div class="nav container">
             <!-- logo -->
-            <a href="index.html" class="logo">Movie <span>
-             Website</span></a>
+            <a href="index.php?movie=index.php" class="logo">PHIM MOI <span>
+             .NET</span></a>
              <!-- tìm kiếm -->
              <div class="search-box">
                 <form class="form-search" action="search.php" method="POST">
