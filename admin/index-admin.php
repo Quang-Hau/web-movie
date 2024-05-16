@@ -18,7 +18,6 @@
     }
     
     include "./incl/header.php";
-            if(isset($_GET['movie'])){
                 switch($_GET['movie']) {
                     case 'addposter':
                         include "./incl/addposter.php";
@@ -53,7 +52,6 @@
                         break;           
                     default: 
                 }
-            }
     ?>
     
     
