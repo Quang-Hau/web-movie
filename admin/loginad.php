@@ -22,7 +22,8 @@
         <div class="container-content">
             <h3>WELCOME BACK!</h3>
             <h1>Log In</h1>
-            <form action="" method="POST">
+            
+            <form action="<?php htmlspecialchars($_SERVER['PHP_SELF']);?>"  method="POST">
                 
                 <div class="form-group">
                     <input type="text" name="username" id="username" placeholder="Enter your user name" required>
