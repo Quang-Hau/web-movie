@@ -16,7 +16,8 @@ require "../db/connect.php";
     $time = $_POST['time'];
     $performer = $_POST['performer'];
     $moviedetails = $_POST['moviedetails'];
-    $moviegenre = $_POST['moviegenre'];    
+    $moviegenre = $_POST['moviegenre'];   
+     
     //kiểm tra xem có ảnh mưới được chonn hay không
     
     $uploadimg = !empty($_FILES['imgsingle']['name'][0]);

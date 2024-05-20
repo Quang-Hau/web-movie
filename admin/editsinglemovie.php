@@ -40,10 +40,16 @@ $result = mysqli_query($conn,$sql);
                 <input type="file" name="movieurl" id="movieurl"  value="<?php echo $row['movie_url']?>">
                 <label for="movieurl">Video Movie</label>
             </div>
+
             <div class="form_group">
-                <input type="file" name="imgsingle[]" id="imgsingle"  value="<?php echo $row['img_singlemv']?>">
-                <label for="imgsingle" multiple>Img Movier </label>
+                <label for="img" multiple class="preview">
+                    <i class='bx bxs-cloud-upload'></i>
+                    <span>Img Movier </span>
+                    <img src="<?php echo $row['img_singlemv']?>" alt="">
+                </label>
+                <input type="file" hidden name="imgsingle[]" id="img"  required>
             </div>
+
     
             <div class="form_group">    
                 <select name="nation" id="nation" required  class="nation">
@@ -95,4 +101,5 @@ $result = mysqli_query($conn,$sql);
     </div>
 <?php  } ?>
     </body>
+    <script src="app.js"></script>
 </html>

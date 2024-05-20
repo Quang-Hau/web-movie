@@ -17,8 +17,8 @@
 
     include "./inc/header.php";
 
-        if(isset($_GET['movie'])){
-            switch($_GET['movie']) {
+        if(isset($_GET['movie']) ? $_GET['movie'] : $_GET['movie'] = 'index.php') {
+            switch($_GET['movie'] ) {
                 case 'new-movie':
                     include "./inc/poster.php";
                     include "./inc/new-movie.php";
@@ -35,7 +35,7 @@
                     include "./inc/series-movie.php";
                     break;
     
-                default: 
+                default:    
                 include "./inc/poster.php";
                 include "./inc/phim-chieu-rap.php";
                 include "./inc/single-movie.php";

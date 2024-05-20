@@ -18,42 +18,43 @@
     }
     
     include "./incl/header.php";
-                switch($_GET['movie']) {
-                    case 'addposter':
-                        include "./incl/addposter.php";
-                        break;
-        
-                    case 'addnation':
-                        include "./incl/addnation.php";
-                        break;
-        
-                    case 'addnewmv':
-                        include "./incl/addnewmv.php";
-                        break;
-
-                    case 'addseriesmv':
-                        include "./incl/addseriesmv.php";
-                        break;
-        
-                    case 'addsinglemv':
-                        include "./incl/addsinglemv.php";
-                        break;
-                    case 'listposter':
-                        include "./incl/listposter.php";
-                        break;
-                    case 'listnewmovie':
-                        include "./incl/listnewmovie.php";
-                        break;
-                    case 'listsinglemovie':
-                        include "./incl/listsinglemovie.php";
-                        break;  
-                    case 'listnation':
-                        include "./incl/listnation.php";
-                        break;           
-                    default: 
-                }
-    ?>
+    if(isset($_GET['movie'])){
+        switch($_GET['movie']) {
+            case 'addposter':
+                include "./incl/addposter.php";
+                break;
     
+            case 'addnation':
+                include "./incl/addnation.php";
+                break;
     
+            case 'addnewmv':
+                include "./incl/addnewmv.php";
+                break;
+    
+            case 'addseriesmv':
+                include "./incl/addseriesmv.php";
+                break;
+    
+            case 'addsinglemv':
+                include "./incl/addsinglemv.php";
+                break;
+            case 'listposter':
+                include "./incl/listposter.php";
+                break;
+            case 'listnewmovie':
+                include "./incl/listnewmovie.php";
+                break;
+            case 'listsinglemovie':
+                include "./incl/listsinglemovie.php";
+                break;  
+            case 'listnation':
+                include "./incl/listnation.php";
+                break;           
+            default: 
+    }
+}
+    ?>   
 </body>
+<script src="app.js"></script>
 </html>

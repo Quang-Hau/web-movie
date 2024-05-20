@@ -40,9 +40,14 @@ $result = mysqli_query($conn,$sql);
                 <input type="file" name="postermvurl" id="postermvurl"  value="<?php echo $row['poster_vdurl']?>">
                 <label for="postermvurl">Video Poster</label>
             </div>
+
             <div class="form_group">
-                <input type="file" name="imgposter[]" id="imgposter"  value="<?php echo $row['poster_img']?>">
-                <label for="imgposter" multiple>Img Poster </label>
+                <label for="img" multiple class="preview">
+                    <i class='bx bxs-cloud-upload'></i>
+                    <span>Img Poster </span>
+                    <img src="<?php echo $row['poster_img']?>" alt="">
+                </label>
+                <input type="file" hidden name="imgposter[]" id="img"  required>
             </div>
     
             <div class="form_group">    
@@ -100,4 +105,5 @@ $result = mysqli_query($conn,$sql);
     </div>
 <?php  } ?>
     </body>
+    <script src="app.js"></script>
 </html>

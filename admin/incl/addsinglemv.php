@@ -92,11 +92,14 @@ if(isset($_POST['btn'])){
                 <input type="file" name="movieurl" id="movieurl" required>
                 <label for="movieurl">Video Movie</label>
             </div>
+
             <div class="form_group">
-                <input type="file" name="imgsingle[]" id="imgsingle" required>
-                <label for="imgsingle" multiple>Img Movie</label>
-            </div>
-    
+                <label for="img" multiple class="preview">
+                    <i class='bx bxs-cloud-upload'></i>
+                    <span>Img Movie </span>
+                </label>
+                <input type="file" hidden name="imgsingle[]" id="img" required>
+            </div>  
     
             <div class="form_group">    
                 <select name="nation" id="nation" class="nation" required>

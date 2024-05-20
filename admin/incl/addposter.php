@@ -88,9 +88,13 @@ if(isset($_POST['btn'])){
                 <input type="file" name="postermvurl" id="postermvurl" required>
                 <label for="postermvurl">Video Poster</label>
             </div>
+
             <div class="form_group">
-                <input type="file" name="imgposter[]" id="imgposter" required>
-                <label for="imgposter" multiple>Img Poster </label>
+                <label for="img" multiple class="preview">
+                    <i class='bx bxs-cloud-upload'></i>
+                    <span>Img Poster </span>
+                </label>
+                <input type="file" hidden name="imgposter[]" id="img" required>
             </div>
     
             <div class="form_group">    

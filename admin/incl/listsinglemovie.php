@@ -1,6 +1,9 @@
+<div class="header">
+        <h1>Trang Quản Lí Phim Lẻ </h1>
+</div>
 <div class="container_list"> 
 
-<table  class="table">
+    <table class="table">
     <thead class="table_heading">
         <tr>
             <th>ID</th>
@@ -21,8 +24,8 @@
         // kết nối với sql
         require "../db/connect.php";
 
-       
-        $listed_sql = 'SELECT * FROM single_movie,movie_nation WHERE single_movie.nation=movie_nation.nation_id ';
+        
+        $listed_sql = 'SELECT * FROM single_movie,movie_nation WHERE single_movie.nation=movie_nation.nation_id ORDER BY id_singlemv DESC';
 
         //thực thi câu lệnh
         $result = mysqli_query($conn , $listed_sql);
@@ -52,5 +55,5 @@
         ?>
     </tbody>
 
-</table>
+    </table>
 </div>
