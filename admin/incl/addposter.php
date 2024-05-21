@@ -66,11 +66,6 @@ if(isset($_POST['btn'])){
     
     $sql = "INSERT INTO `poster_movie`(`poster_img`,`name_poster`,`nation`, `publish`,`time`,`performer`,`moviedetails`,`movie_genre`,`slogan`,`poster_vdurl`) VALUES('$imgs', '$name', '$nation', '$publish', '$time', '$performer', '$moviedetails', '$moviegenre', '$slogan', '$video_url')";
     $result = mysqli_query($conn, $sql);
-    if ($result) {
-        echo $messSucess = "Dữ liệu đã được thêm vào cơ sở dữ liệu.";
-    } else {
-        echo $messerr = "Lỗi khi thêm dữ liệu vào cơ sở dữ liệu: " . mysqli_error($conn);
-    }
    
 }
 ?>
@@ -83,6 +78,8 @@ if(isset($_POST['btn'])){
             <div class="form_group">
                 <input type="text" name="nameposter" id="nameposter" required>
                 <label for="nameposter">Name Poster </label>
+                
+                <span class="showErrorName"> tesst</span>
             </div>
             <div class="form_group">
                 <input type="file" name="postermvurl" id="postermvurl" required>
@@ -95,6 +92,7 @@ if(isset($_POST['btn'])){
                     <span>Img Poster </span>
                 </label>
                 <input type="file" hidden name="imgposter[]" id="img" required>
+                <span class="showErrorImg"> </span>
             </div>
     
             <div class="form_group">    
@@ -145,7 +143,7 @@ if(isset($_POST['btn'])){
             <label for="slogan">Slogan</label>
             </div>
 
-            <button class="btn " type="submit" name="btn">submit</button>
+            <button class="btn" type="submit" name="btn">submit</button>
         </form>
         <h4 class="heading mess--err"> <?php echo $messerr ?> </h4>
         <h4 class="heading mess--success"> <?php echo $messSucess ?> </h4>

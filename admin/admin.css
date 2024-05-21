@@ -81,6 +81,7 @@
         background-color: var(--text-color);
         pointer-events: none;
         transition: all 0.3 ease-in-out;
+        
     }
 
     .form_group input:focus{
@@ -350,5 +351,12 @@
 }
 
  
- 
+ /* valid */
+
+ .showErrorImg{
+    color: rgb(209, 108, 108);
+    font-size: 17px;
+    display: block;
+    margin-top: 10px;
+ }
 

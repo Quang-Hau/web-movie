@@ -48,6 +48,7 @@ $result = mysqli_query($conn,$sql);
                     <img src="<?php echo $row['img_singlemv']?>" alt="">
                 </label>
                 <input type="file" hidden name="imgsingle[]" id="img"  required>
+                <span class="showErrorImg"> </span>
             </div>
 
     

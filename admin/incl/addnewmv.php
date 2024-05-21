@@ -100,6 +100,7 @@ if(isset($_POST['btn'])){
                     <span>Img Movie </span>
                 </label>
                 <input type="file" hidden name="imgmovie[]" id="img" required>
+                <span class="showErrorImg"> </span>
             </div>
     
             <div class="form_group">    

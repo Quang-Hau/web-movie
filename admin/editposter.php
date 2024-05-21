@@ -48,6 +48,8 @@ $result = mysqli_query($conn,$sql);
                     <img src="<?php echo $row['poster_img']?>" alt="">
                 </label>
                 <input type="file" hidden name="imgposter[]" id="img"  required>
+                <span class="showErrorImg"> </span>
+
             </div>
     
             <div class="form_group">    

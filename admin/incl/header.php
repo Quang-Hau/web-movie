@@ -1,7 +1,7 @@
 <div id="header">
     <div class="box-logo">
-        <a href="index.html" class="logo">Movie <span>
-            Website</span></a>
+        <a href="index.html" class="logo">PHIM MOI<span>
+            .NET</span></a>
     </div>
     <div class="box-logo">
         <h3> welcome <span><?php echo $_SESSION['username']; ?></span></h3>

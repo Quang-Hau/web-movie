@@ -48,6 +48,7 @@ $result = mysqli_query($conn,$sql);
                     <img src="<?php echo $row['img_movie']?>" alt="">
                 </label>
                 <input type="file" hidden name="imgmovie[]" id="img"  required>
+                <span class="showErrorImg"> </span>
             </div>
 
     
