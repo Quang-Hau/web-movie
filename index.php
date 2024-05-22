@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="responsive.css">
 </head>
-<body>
+<body class="">
 <?php 
 
     include "./inc/header.php";
@@ -72,6 +72,7 @@
         })
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+    <script src="main.js"></script> 
 </body>
+<script src="dark.js"></script>
 </html>

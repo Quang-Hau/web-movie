@@ -21,7 +21,7 @@
                 <h1 class="home-title">
                 <?php  echo $row_poster['slogan']; ?>
                 </h1>
-                <p><?php  echo $row_poster['moviedetails']; ?></p><a href="playVideoposter.php?id=<?php echo $row_poster['poster_id']; ?>">xem thêm...</a>
+                <p><?php  echo $row_poster['moviedetails']; ?></p><a class="see-more" href="playVideoposter.php?id=<?php echo $row_poster['poster_id']; ?>">xem thêm...</a>
                 <div class="home-info">
                     <p><?php echo $row_poster['movie_genre'] ;?> | </p>
                     <p><?php echo $row_poster['name_nation'] ;?> | </p>

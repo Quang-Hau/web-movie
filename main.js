@@ -36,3 +36,4 @@ var swiper = new Swiper(".movie-theaters-content", {
         },
     },
 });
+

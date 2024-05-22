@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="playVideo.css">
 </head>
-<body>
+<body  class="">
 <?php 
 include "./inc/header.php";
 ?>  
@@ -96,4 +96,5 @@ include "./inc/footer.php";
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
+<script src="dark.js"></script>
 </html>

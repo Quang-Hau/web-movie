@@ -4,10 +4,6 @@
             <h2 class="heading-title">
                 PHIM CHIẾU RẠP
             </h2>
-            <div class="swiper-btn">
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
         </div>
         <div class="swiper movie-theaters-content">
              <!-- Swiper -->

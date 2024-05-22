@@ -217,5 +217,9 @@
     #search-input {
         margin-right: 85px;
     }
+
+    .nav-link .bx {
+       color: #fff !important;
+    }
 }
 

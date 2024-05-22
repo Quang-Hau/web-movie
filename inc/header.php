@@ -2,8 +2,7 @@
 <div class="header" id="header">
         <div class="nav container">
             <!-- logo -->
-            <a href="index.php?movie=index.php" class="logo">PHIM MOI <span>
-             .NET</span></a>
+            <a href="index.php?movie=index.php" class="logo">PHIM MOI <span>.NET</span></a>
              <!-- tìm kiếm -->
              <div class="search-box">
                 <form class="form-search" action="search.php" method="POST">
@@ -11,6 +10,12 @@
                     <button class="btn-search" type="submit"><i class="bx bx-search bx-search"></i></button>
                 </form>
              </div>
+
+             <div class="dark-btn">
+                <input type="checkbox" id="dark-mode" class="dark-mode" hidden>
+                <label for="dark-mode"></label>
+             </div>
+
         </div>
         <!-- navbar -->
         <div class="navbar" id="navbar">
