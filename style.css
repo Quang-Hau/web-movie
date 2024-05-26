@@ -441,6 +441,7 @@ body.dark{
     display: block;
     border-radius: 50%;
     transition: 0.5s ;
+    cursor: pointer;
 }
 
 .dark-btn input:checked + label{
