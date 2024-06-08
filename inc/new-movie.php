@@ -1,7 +1,7 @@
 <section class="movies container" id="movies">
     <div class="heading">
         <h2 class="heading-title">
-            PHIM MỚI 
+            PHIM MỚI
         </h2>
     </div>
     <div class="movies-content">
@@ -17,14 +17,14 @@
             while ($row_newmovie = mysqli_fetch_assoc($result)) {
         ?>
                 <div class="movie-box">
-                    <img src="<?php echo "admin/".$row_newmovie['img_movie'] ?>" alt="<?php echo $row_newmovie['movie_name']; ?>"  class="movie-box-img">
+                    <img src="<?php echo "admin/" . $row_newmovie['img_movie'] ?>" alt="<?php echo $row_newmovie['movie_name']; ?>" class="movie-box-img">
                     <div class="box-text">
                         <h2 class="movie-title">
                             <?php echo $row_newmovie['movie_name']; ?>
                         </h2>
                         <span class="movie-type"><?php echo $row_newmovie['movie_genre']; ?></span>
                         <span class="movie-type"><?php echo $row_newmovie['name_nation']; ?></span>
-                        <a href="playVideo.php?id=<?php echo$row_newmovie['id_movie']; ?>" class="watch-btn play-btn">
+                        <a href="playVideo.php?id=<?php echo $row_newmovie['id_movie']; ?>" class="watch-btn play-btn">
                             <i class='bx bx-play'></i>
                         </a>
                     </div>

@@ -26,7 +26,8 @@ if(isset($_POST['btn'])){
     
         
         $location = "uploadPoster/".$filename . $generated_file_name ;
-    
+        
+        //lấy phần mwor rộng đường dẫn của tệp
         $extension = pathinfo($location,PATHINFO_EXTENSION);
         $extension = strtolower($extension);
     

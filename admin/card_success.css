@@ -1,16 +1,14 @@
-
 :root {
-    --white:#FCFCFC;
-    --gray:#CBCDD3;
-    --dark:#777777;
-    --error:#EF8D9C;
-    --orange:#FFC39E;
-    --success:#B0DB7D;
-    --secondary:#99DBB4;
+  --white: #fcfcfc;
+  --gray: #cbcdd3;
+  --dark: #777777;
+  --error: #ef8d9c;
+  --orange: #ffc39e;
+  --success: #b0db7d;
+  --secondary: #99dbb4;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
-
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
 html {
   display: grid;
@@ -63,7 +61,8 @@ p {
   letter-spacing: 1px;
 }
 
-button, .dot {
+button,
+.dot {
   cursor: pointer;
 }
 
@@ -73,7 +72,11 @@ button, .dot {
   height: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(to bottom right, var(--success) 40%, var(--secondary) 100%);
+  background: linear-gradient(
+    to bottom right,
+    var(--success) 40%,
+    var(--secondary) 100%
+  );
   border-radius: 20px;
   box-shadow: 5px 5px 20px rgba(var(--gray), 10%);
   perspective: 40px;
@@ -85,7 +88,11 @@ button, .dot {
   height: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(to bottom left,var(--error) 40%, var(--orange) 100%);
+  background: linear-gradient(
+    to bottom left,
+    var(--error) 40%,
+    var(--orange) 100%
+  );
   border-radius: 20px;
   box-shadow: 5px 5px 20px rgba(var(--gray), 10%);
 }
@@ -100,13 +107,13 @@ button, .dot {
   right: 6%;
 }
 
-.dot:hover{
-    background: darken(var(--white), 20%);
+.dot:hover {
+  background: darken(var(--white), 20%);
 }
 
 .two {
   right: 12%;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .face {
@@ -150,7 +157,7 @@ button, .dot {
 }
 
 .mouth {
-  position:absolute;
+  position: absolute;
   top: 43%;
   left: 41%;
   width: 7px;
@@ -175,7 +182,7 @@ button, .dot {
   position: absolute;
   width: 21%;
   height: 3%;
-  opacity: .5;
+  opacity: 0.5;
   background: var(--dark);
   left: 40%;
   top: 43%;
@@ -189,7 +196,6 @@ button, .dot {
 .move {
   animation: move 3s ease-in-out infinite;
 }
-
 
 .message {
   position: absolute;
@@ -209,19 +215,19 @@ button, .dot {
   left: 25%;
   outline: 0;
   border: none;
-  box-shadow: 2px 2px 10px rgba(var(--dark), .5);
-  transition: all .5s ease-in-out;
+  box-shadow: 2px 2px 10px rgba(var(--dark), 0.5);
+  transition: all 0.5s ease-in-out;
 }
 
-.button-box:hover{
-    background: darken(var(--white), 5%);
-    transform: scale(1.05);
-    transition: all .3s ease-in-out;
+.button-box:hover {
+  background: darken(var(--white), 5%);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }
 
 @keyframes bounce {
   50% {
-     transform: translateY(-10px);
+    transform: translateY(-10px);
   }
 }
 
@@ -258,9 +264,8 @@ button, .dot {
   }
 }
 
-
 p {
-  color:var(--dark);
+  color: var(--dark);
   letter-spacing: 2px;
   font-size: 1rem;
   font-weight: 500;
@@ -268,9 +273,8 @@ p {
 a {
   color: var(--success);
   text-decoration: none;
-
 }
 
-a:hover{
-    color: var(--orange);
+a:hover {
+  color: var(--orange);
 }

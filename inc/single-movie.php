@@ -16,14 +16,14 @@
             while ($row_single_movie = mysqli_fetch_assoc($result)) {
         ?>
                 <div class="movie-box">
-                    <img src="<?php echo "admin/".$row_single_movie['img_singlemv'] ?>" alt="<?php echo $row_single_movie['name_singlemv']; ?>" class="movie-box-img">
+                    <img src="<?php echo "admin/" . $row_single_movie['img_singlemv'] ?>" alt="<?php echo $row_single_movie['name_singlemv']; ?>" class="movie-box-img">
                     <div class="box-text">
                         <h2 class="movie-title">
                             <?php echo $row_single_movie['name_singlemv']; ?>
                         </h2>
                         <span class="movie-type"><?php echo $row_single_movie['movie_genre']; ?></span>
                         <span class="movie-type"><?php echo $row_single_movie['name_nation']; ?></span>
-                        <a href="playVideosingle.php?id=<?php echo$row_single_movie['id_singlemv']; ?>" class="watch-btn play-btn">
+                        <a href="playVideosingle.php?id=<?php echo $row_single_movie['id_singlemv']; ?>" class="watch-btn play-btn">
                             <i class='bx bx-play'></i>
                         </a>
                     </div>

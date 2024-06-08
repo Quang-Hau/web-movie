@@ -1,106 +1,100 @@
-
-
-.container{    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+.container {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.play_movie{
-    margin: 6rem 0 3rem 0;
+.play_movie {
+  margin: 6rem 0 3rem 0;
 }
 
-.movie_info{
-    display: flex;
-    margin: 3rem 0;
-    max-width: 400px;
+.movie_info {
+  display: flex;
+  margin: 3rem 0;
+  max-width: 400px;
 }
 
-
-.poster_img{
-    border-radius: 10px;
-    width: 70%;
-    object-fit: cover;
+.poster_img {
+  border-radius: 10px;
+  width: 70%;
+  object-fit: cover;
 }
 
-.movie_body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.movie_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.movie_body--heading h1{
-    padding: 20px 0 20px 20px;
-    border: 1px solid #ccc;
-
+.movie_body--heading h1 {
+  padding: 20px 0 20px 20px;
+  border: 1px solid #ccc;
 }
 
-.home-info{
-    padding: 20px 0 20px 20px;
-    border: 1px solid #ccc;
+.home-info {
+  padding: 20px 0 20px 20px;
+  border: 1px solid #ccc;
 }
 
 .home-info p {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
-.moviedetails{
-    padding: 20px 20px 20px 20px;
-    border: 1px solid #ccc;
+.moviedetails {
+  padding: 20px 20px 20px 20px;
+  border: 1px solid #ccc;
 }
 
-.moviedetails_heading h3{
-    padding: 15px 0 ;
-    font-size: 1.5rem;
+.moviedetails_heading h3 {
+  padding: 15px 0;
+  font-size: 1.5rem;
 }
 
-.moviedetails_body span{
-    font-size: 1.2rem;
+.moviedetails_body span {
+  font-size: 1.2rem;
 }
 
-.moviedetails_body p{
-    color: #000;
-    max-width: 1570px;
+.moviedetails_body p {
+  color: #000;
+  max-width: 1570px;
 }
 
-.share_social{
-    padding: 20px 0 20px 20px;
-    border: 1px solid #ccc;
+.share_social {
+  padding: 20px 0 20px 20px;
+  border: 1px solid #ccc;
 }
 
-@media (max-width:475px){
-    .nav-link-title {
-        font-size: 0 ;
-    }
+@media (max-width: 475px) {
+  .nav-link-title {
+    font-size: 0;
+  }
 
-    .watch-btn .bx{
-        font-size: 30px;
-        width: 40px;
-        height: 40px;
-    }
+  .watch-btn .bx {
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+  }
 
-    .play_movie{
-        padding-top: 1rem;
-        max-width: 525px;
-        height: auto;
-    }
-    .video {
-        width: 100%;
-        height: auto;
+  .play_movie {
+    padding-top: 1rem;
+    max-width: 525px;
+    height: auto;
+  }
+  .video {
+    width: 100%;
+    height: auto;
+  }
+  .share_social .bx {
+    font-size: 22px;
+  }
 
-    }
-    .share_social .bx {
-        font-size: 22px;
-    }
+  .movie_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .movie_info{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-
-    .movie_poster{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .movie_poster {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
-
