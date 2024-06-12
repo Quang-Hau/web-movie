@@ -100,6 +100,7 @@ label {
   border: 1px solid #dadce0;
   font-size: 18px;
   background-color: #1a73e8;
+  cursor: pointer;
 }
 
 * {
@@ -222,10 +223,13 @@ body {
   display: none;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 7px;
+  overflow: hidden;
 }
 
 #nav li:hover .subnav {
   display: block;
+  
 }
 
 #nav > li::after {
@@ -327,6 +331,7 @@ td {
   align-items: center;
   flex-direction: column;
   pointer-events: auto;
+  cursor: pointer;
 }
 
 .preview img {
